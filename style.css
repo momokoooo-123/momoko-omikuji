@@ -1,0 +1,24 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fffbe7;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  color: #f2769f;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  margin-top: 20px;
+}
