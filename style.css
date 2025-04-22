@@ -1,9 +1,15 @@
 body {
-background-image: url('bg.png');
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* 横方向に中央 */
+  align-items: center;      /* 縦方向に中央 */
+  flex-direction: column;
+  background-image: url('bg.png'); /* ←背景画像のファイル名に合わせてね */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  
+  background-position: center;  
   font-family: 'Arial', sans-serif;
   background-color: #fffbe7;
   text-align: center;
