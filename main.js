@@ -5,7 +5,7 @@ function drawOmikuji() {
   setTimeout(function() {
     document.getElementById('lotteryImg').style.display = 'none';
 
-    const results = ['daikichi.png', 'chukichi.png', 'shoukichi.png', 'kyou.png'];
+    const results = ['daikichi.png', 'chukichi.png', 'shokichi.png', 'kyo.png'];
 
     const result = results[Math.floor(Math.random() * results.length)];
 
