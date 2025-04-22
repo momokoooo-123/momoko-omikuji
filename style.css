@@ -1,4 +1,9 @@
 body {
+background-image: url('bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
   font-family: 'Arial', sans-serif;
   background-color: #fffbe7;
   text-align: center;
