@@ -20,10 +20,9 @@ h1 {
   color: #f2769f;
   margin-bottom: 30px;
 }
-
 img {
-  width: 100%;
-  max-width: 300px;
-  cursor: pointer;
-  margin-top: 20px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
