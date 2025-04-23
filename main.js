@@ -19,7 +19,7 @@ window.onload = function () {
     tapBtn.style.display = "none";
 
     // 抽選中のGIFを表示（省略可能）
-    resultImg.src = "choosenow.gif"; // 抽選中の画像（なければこの行削除OK）
+    resultImg.src = "lottery.gif"; // 抽選中の画像（なければこの行削除OK）
     resultImg.style.display = "block";
 
     // 少し待ってから結果表示
