@@ -7,7 +7,7 @@ window.onload = function () {
     "daikichi.png",
     "chukichi.png",
     "shokichi.png",
-    "kyou.png"
+    "kyo.png"
   ];
 
   // 初期状態
