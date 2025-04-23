@@ -16,7 +16,10 @@ function drawOmikuji() {
   document.getElementById("again-btn").style.display = "block";
   document.getElementById("again-btn").addEventListener("click", function () {
   location.reload();
-    
+    // 結果画像を表示
+document.getElementById("result-img").src = selectedResult;
+document.getElementById("result-img").style.display = "block";
+
 // 0.8秒後にもう一回ボタンを表示（画像表示後に出るように）
 setTimeout(() => {
   document.getElementById("again-btn").style.display = "block";
