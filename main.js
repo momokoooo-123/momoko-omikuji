@@ -1,28 +1,41 @@
-function drawOmikuji() {
-  document.getElementById('startImg').style.display = 'none';
-  document.getElementById('lotteryImg').style.display = 'block';
+window.onload = function () {
+  const tapBtn = document.getElementById("tap-btn");
+  const resultImg = document.getElementById("result-img");
+  const againBtn = document.getElementById("again-btn");
 
-  setTimeout(function() {
-    document.getElementById('lotteryImg').style.display = 'none';
+  const results = [
+    "daikichi.png",
+    "chukichi.png",
+    "shoukichi.png",
+    "kyou.png"
+  ];
 
-    const results = ['daikichi.png', 'chukichi.png', 'shokichi.png', 'kyo.png'];
+  // 初期状態
+  resultImg.style.display = "none";
+  againBtn.style.display = "none";
 
-    const result = results[Math.floor(Math.random() * results.length)];
+  tapBtn.addEventListener("click", function () {
+    // TAPボタンを非表示にする
+    tapBtn.style.display = "none";
 
-    const resultImg = document.getElementById('resultImg');
-    resultImg.src = result;
-    resultImg.style.display = 'block';
-  }, 2000);
-  document.getElementById("again-btn").style.display = "block";
-  document.getElementById("again-btn").addEventListener("click", function () {
-  location.reload();
-    // 結果画像を表示
-document.getElementById("result-img").src = selectedResult;
-document.getElementById("result-img").style.display = "block";
+    // 抽選中のGIFを表示（省略可能）
+    resultImg.src = "choosenow.gif"; // 抽選中の画像（なければこの行削除OK）
+    resultImg.style.display = "block";
 
-// 0.8秒後にもう一回ボタンを表示（画像表示後に出るように）
-setTimeout(() => {
-  document.getElementById("again-btn").style.display = "block";
-}, 800);
-});
-}
+    // 少し待ってから結果表示
+    setTimeout(() => {
+      const selectedResult = results[Math.floor(Math.random() * results.length)];
+      resultImg.src = selectedResult;
+
+      // 結果が表示されたあとに「もう一回」ボタン表示
+      setTimeout(() => {
+        againBtn.style.display = "block";
+      }, 800); // ←この数字で表示タイミングを調整！
+    }, 1200); // 抽選中の画像表示時間
+  });
+
+  // もう一回引くボタンでページリロード
+  againBtn.addEventListener("click", function () {
+    location.reload();
+  });
+};
