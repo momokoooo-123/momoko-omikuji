@@ -8,12 +8,17 @@
 <body>
   <div class="container">
     <h1>ももやまももこ おみくじ</h1>
-    <img id="startImg" src="start.gif" alt="ここをタップ！" onclick="drawOmikuji()">
-　　　<img id="again-btn" src="again.png" alt="もう一回引く" style="display:none; cursor:pointer; margin-top: 20px;" />
-    <img id="lotteryImg" src="lottery.gif" alt="抽選中..." style="display: none;">
-    <img id="resultImg" src="" alt="おみくじ結果" style="display: none;">
+    
+    <!-- TAPボタン -->
+    <img id="tap-btn" src="start.gif" alt="ここをタップ！">
+
+    <!-- 結果画像（抽選中→結果表示） -->
+    <img id="result-img" src="" alt="おみくじ結果" style="display: none;">
+
+    <!-- もう一回引く -->
+    <img id="again-btn" src="again.png" alt="もう一回引く" style="display: none; cursor: pointer; margin-top: 20px;">
   </div>
 
-  <script src="main.js"></script>
-  </body>
+  <script src="main.js?v=2"></script>
+</body>
 </html>
