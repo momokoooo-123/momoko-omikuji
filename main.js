@@ -6,7 +6,7 @@ window.onload = function () {
   const results = [
     "daikichi.png",
     "chukichi.png",
-    "shoukichi.png",
+    "shokichi.png",
     "kyou.png"
   ];
 
